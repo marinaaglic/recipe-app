@@ -22,7 +22,7 @@ const Popular = () => {
     }
   };
   return (
-    <div className="wrapper">
+    <div className="div-wrapper">
       <h3>Popular Picks</h3>
       <Splide
         options={{
@@ -36,7 +36,7 @@ const Popular = () => {
         {popular.map((recipe) => {
           return (
             <SplideSlide key={recipe.id}>
-              <div className="card">
+              <div className="div-card">
                 <p>{recipe.title}</p>
                 <img src={recipe.image} alt={recipe.title} />
                 <div className="gradient" />
