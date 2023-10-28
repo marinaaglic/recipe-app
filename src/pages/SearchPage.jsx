@@ -20,10 +20,14 @@ const SearchPage = () => {
     <div className="div-grid">
       {searchedRecipes.map((item) => {
         return (
-          <div className="div-card" key={item.id}>
+          <div className="search-div" key={item.id}>
             <Link to={"/recipe/" + item.id}>
-              <img src={item.image} alt={item.title} />
-              <h4>{item.title}</h4>
+              <img src={item.image} alt={item.title} className="img-search" />
+              <div className="title-div">
+                <p className="p-title">{item.title}</p>
+              </div>
+              {/* <img src={item.image} alt={item.title} />
+              <p>{item.title}</p> */}
             </Link>
           </div>
         );
