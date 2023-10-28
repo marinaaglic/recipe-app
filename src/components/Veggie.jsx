@@ -39,9 +39,12 @@ const Veggie = () => {
             <SplideSlide key={recipe.id}>
               <div className="div-card">
                 <Link to={"/recipe/" + recipe.id}>
+                  <img
+                    src={recipe.image}
+                    alt={recipe.title}
+                    className="img-veg"
+                  />
                   <p>{recipe.title}</p>
-                  <img src={recipe.image} alt={recipe.title} />
-                  <div className="gradient" />
                 </Link>
               </div>
             </SplideSlide>
