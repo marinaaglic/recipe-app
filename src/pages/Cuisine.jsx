@@ -27,10 +27,12 @@ const Cuisine = () => {
     >
       {cuisine.map((item) => {
         return (
-          <div className="div-card" key={item.id}>
+          <div className="cuisine-div" key={item.id}>
             <Link to={"/recipe/" + item.id}>
-              <img src={item.image} alt={item.title} />
-              <h4>{item.title}</h4>
+              <img src={item.image} alt={item.title} className="img-cuisine" />
+              <div className="title-div">
+                <p className="p-title">{item.title}</p>
+              </div>
             </Link>
           </div>
         );
