@@ -48,3 +48,33 @@
 .p-title {
   font-weight: bold;
 }
+
+.button-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2rem;
+  margin-top: 1.2rem;
+}
+
+.btn-load {
+  padding: 1rem 2rem;
+  background-color: white;
+  color: #313131;
+  border: 2px solid black;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+
+  &:hover {
+    background-color: #313131;
+    color: white;
+    border: 2px solid #313131;
+  }
+}
+
+.p-total {
+  margin-right: 2rem;
+}
