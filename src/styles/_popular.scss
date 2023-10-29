@@ -41,10 +41,9 @@
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  transition: transform 0.2s;
 }
 
-.div-card:hover .img-popular {
-  -ms-transform: scale(1.5);
-  -webkit-transform: scale(1.5);
-  transform: scale(2);
+.img-popular:hover {
+  transform: scale(1.2);
 }

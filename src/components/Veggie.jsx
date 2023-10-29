@@ -42,7 +42,7 @@ const Veggie = () => {
                   <img
                     src={recipe.image}
                     alt={recipe.title}
-                    className="img-veg"
+                    className="img-veg hover-pop-out"
                   />
                   <p>{recipe.title}</p>
                 </Link>

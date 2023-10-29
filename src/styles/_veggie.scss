@@ -41,10 +41,9 @@
   height: auto;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  transition: transform 0.2s;
 }
 
-.div-card:hover .img-veg {
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(2);
+.img-veg:hover {
+  transform: scale(1.2);
 }
