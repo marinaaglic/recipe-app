@@ -56,7 +56,7 @@ const Cuisine = () => {
 
       <div className="button-div">
         <p className="p-total">
-          Displaying {Math.min(recipeCount, totalRecipes)} of {totalRecipes}
+          Showing {Math.min(recipeCount, totalRecipes)} of {totalRecipes}
         </p>
 
         {recipeCount < totalRecipes && (
